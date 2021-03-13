@@ -1,0 +1,30 @@
+package guryongtoo;
+
+import java.util.Scanner;
+
+public class rule {
+	public static void main(String[] args) {
+		int[] red = new int[9];
+		int[] blue = new int[9];
+		for(int i = 0; i < 9; i++) {
+			red[i] = i + 1;
+			blue[i] = i + 1;
+		}
+		String fp = "";
+		boolean player = true;
+		if(player == true) {
+			fp = "레드";
+		}
+		else {
+			fp = "블루";
+		}
+		int re = 0;
+		int bl = 0;
+		Scanner sc = new Scanner(System.in);
+//		while(true) {
+			System.out.printf("%s 플레이어 부터 카드를 내주십시오. 현재 점수  레드 : %d점, 블루 : %d점 \n", fp, re, bl);
+			int a = sc.nextInt();
+			System.out.printf("%s 플레이어의 차례입니다. 카드를 내주십시오.", fp);
+//		}
+	}
+}
