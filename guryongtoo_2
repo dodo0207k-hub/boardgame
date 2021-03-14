@@ -1,0 +1,35 @@
+package guryongtoo;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class rule {
+	public static void main(String[] args) {
+		ArrayList<Integer> red = new ArrayList<>();
+		ArrayList<Integer> blue = new ArrayList<>();
+		for(int i = 0; i < 9; i++) {
+			red.add(i + 1);
+			blue.add(i + 1);
+		}
+		Scanner sc = new Scanner(System.in);
+			int redc = sc.nextInt();
+			int bluec = sc.nextInt();
+			if(redc == 9 && bluec == 1) {
+				red.remove(9);
+				blue.remove(1);
+				System.out.println("블루의 승리입니다.");
+			}
+			else if(redc == 1 && bluec == 9) {
+				
+			}
+			else if(redc == bluec) {
+				
+			}
+			else if(redc > bluec) {
+				
+			}
+			else if(redc < bluec) {
+				
+			}
+	}
+}
