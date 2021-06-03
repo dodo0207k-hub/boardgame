@@ -1,0 +1,26 @@
+package boardgame;
+
+import java.util.Scanner;
+
+public class rockscissorpaper {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("a플레이어의 차례입니다. 다음중 하나를 내주세요. 1.바위 2.가위 3.보");
+		int a = sc.nextInt();
+		System.out.println("b플레이어의 차례입니다. 다음중 하나를 내주세요. 5.바위 10.가위 15.보");
+		int b = sc.nextInt();
+		if((a + b) % 3 == 0) System.out.println("비겼습니다.");
+		else {
+			switch(a + b) {
+			case 11: System.out.println("a플레이어가 이겼습니다."); break;
+			case 17: System.out.println("a플레이어가 이겼습니다."); break;
+			case 8: System.out.println("a플레이어가 이겼습니다."); break;
+			case 7: System.out.println("b플레이어가 이겼습니다."); break;
+			case 13: System.out.println("b플레이어가 이겼습니다."); break;
+			case 16: System.out.println("b플레이어가 이겼습니다."); break;
+			}
+		}
+	}
+
+}
